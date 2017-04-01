@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="none">
+    <listeners>
+        <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+        <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+   </listeners>
+       
+  	<test name="Random Test">
+		<classes>
+       		<!-- 	-->
+       			<class name="testCases.Login_Test" />
+       			<class name="testCases.CreateJob_Test" />
+       			<class name="testCases.CreateUser_Test" />
+       			<class name="testCases.CreateTeam_Test" />
+       			<class name="testCases.CreateHub_Test" />
+       			<class name="testCases.CreateVehicle_Test" />
+       			<class name="testCases.ViewJobDetails_Test" />
+       			<class name="testCases.FindJobStatus_Test" />
+       			<class name="testCases.JobEditAction_Test" />
+       			<class name="testCases.JobDeleteAction_Test" />
+       			<class name="testCases.MessageStatus_Test" />
+       			<class name="testCases.Settings_Test" />
+       			<class name="testCases.OrgRegistration_Test" />
+       			
+		</classes>
+  	</test> <!-- Test -->
+</suite> <!-- Suite -->

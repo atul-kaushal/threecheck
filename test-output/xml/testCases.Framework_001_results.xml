@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Random Test"
+           tests="1"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="50.188">
+  <properties />
+  
+  
+            <testcase name="main" time="50.188" classname="testCases.Framework_001" />
+      
+</testsuite>

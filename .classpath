@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7"/>
+	<classpathentry kind="lib" path="C:/study material/selenium-2.53.0/Selenium libs/apache-mime4j-0.6.jar"/>
+	<classpathentry kind="lib" path="C:/study material/selenium-2.53.0/Selenium libs/bsh-2.0b4.jar"/>
+	<classpathentry kind="lib" path="C:/study material/selenium-2.53.0/Selenium libs/cglib-nodep-2.1_3.jar"/>
+	<classpathentry kind="lib" path="C:/study material/selenium-2.53.0/Selenium libs/commons-codec-1.10.jar"/>
+	<classpathentry kind="lib" path="C:/study material/selenium-2.53.0/Selenium libs/commons-exec-1.3.jar"/>
+	<classpathentry kind="lib" path="C:/study material/selenium-2.53.0/Selenium libs/commons-io-2.4.jar"/>
+	<classpathentry kind="lib" path="C:/study material/selenium-2.53.0/Selenium libs/commons-logging-1.2.jar"/>
+	<classpathentry kind="lib" path="C:/study material/selenium-2.53.0/Selenium libs/gson-2.3.1.jar"/>
+	<classpathentry kind="lib" path="C:/study material/selenium-2.53.0/Selenium libs/guava-19.0.jar"/>
+	<classpathentry kind="lib" path="C:/study material/selenium-2.53.0/Selenium libs/hamcrest-core-1.3.jar"/>
+	<classpathentry kind="lib" path="C:/study material/selenium-2.53.0/Selenium libs/hamcrest-library-1.3.jar"/>
+	<classpathentry kind="lib" path="C:/study material/selenium-2.53.0/Selenium libs/httpclient-4.5.1.jar"/>
+	<classpathentry kind="lib" path="C:/study material/selenium-2.53.0/Selenium libs/httpcore-4.4.3.jar"/>
+	<classpathentry kind="lib" path="C:/study material/selenium-2.53.0/Selenium libs/httpmime-4.5.jar"/>
+	<classpathentry kind="lib" path="C:/study material/selenium-2.53.0/Selenium libs/jcommander-1.48.jar"/>
+	<classpathentry kind="lib" path="C:/study material/selenium-2.53.0/Selenium libs/jna-4.1.0.jar"/>
+	<classpathentry kind="lib" path="C:/study material/selenium-2.53.0/Selenium libs/jna-platform-4.1.0.jar"/>
+	<classpathentry kind="lib" path="C:/study material/selenium-2.53.0/Selenium libs/junit-4.12.jar"/>
+	<classpathentry kind="lib" path="C:/study material/selenium-2.53.0/Selenium libs/netty-3.5.7.Final.jar"/>
+	<classpathentry kind="lib" path="C:/study material/selenium-2.53.0/Selenium libs/phantomjsdriver-1.2.1.jar"/>
+	<classpathentry kind="lib" path="C:/study material/selenium-2.53.0/Selenium libs/selenium-java-2.53.0.jar"/>
+	<classpathentry kind="lib" path="C:/study material/selenium-2.53.0/Selenium libs/testng-6.9.9.jar"/>
+	<classpathentry kind="lib" path="C:/study material/selenium-2.53.0/POI lib/dom4j-1.6.1.jar"/>
+	<classpathentry kind="lib" path="C:/study material/selenium-2.53.0/POI lib/poi-3.9-20121203.jar"/>
+	<classpathentry kind="lib" path="C:/study material/selenium-2.53.0/POI lib/poi-ooxml-3.9-20121203.jar"/>
+	<classpathentry kind="lib" path="C:/study material/selenium-2.53.0/POI lib/poi-ooxml-schemas-3.9-20121203.jar"/>
+	<classpathentry kind="lib" path="C:/study material/selenium-2.53.0/POI lib/xmlbeans-2.3.0.jar"/>
+	<classpathentry kind="lib" path="C:/study material/advanced report jar/extentreports-java-3.0.3/extentreports-3.0.3.jar"/>
+	<classpathentry kind="lib" path="C:/study material/advanced report jar/guice-3.0.jar"/>
+	<classpathentry kind="lib" path="C:/study material/advanced report jar/reportng-1.1.4.jar"/>
+	<classpathentry kind="lib" path="C:/study material/advanced report jar/velocity-dep-1.4.jar"/>
+	<classpathentry kind="lib" path="C:/study material/New folder/java-json.jar"/>
+	<classpathentry kind="lib" path="C:/study material/json-lib-2.4-jdk15.jar"/>
+	<classpathentry kind="lib" path="C:/study material/lib/browsermob-proxy-2.1.4/lib/browsermob-dist-2.1.4.jar"/>
+	<classpathentry kind="lib" path="C:/study material/lib/browsermob-proxy-2.1.4/browsermob-core-2.1.4-javadoc.jar"/>
+	<classpathentry kind="lib" path="C:/study material/lib/browsermob-proxy-2.1.4/browsermob-core-2.1.4-sources.jar"/>
+	<classpathentry kind="lib" path="C:/study material/lib/browsermob-proxy-2.1.4/browsermob-rest-2.1.4-javadoc.jar"/>
+	<classpathentry kind="lib" path="C:/study material/lib/browsermob-proxy-2.1.4/browsermob-rest-2.1.4-sources.jar"/>
+	<classpathentry kind="lib" path="C:/study material/harlib-1.1.3.jar"/>
+	<classpathentry kind="lib" path="C:/study material/harlib-jackson-1.1.3.jar"/>
+	<classpathentry kind="lib" path="C:/study material/selenium-2.53.0/apache-log4j-1.2.17/log4j-1.2.17.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

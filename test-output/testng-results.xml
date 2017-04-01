@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+    <line>
+      <![CDATA[SignIn Action is successfully perfomred]]>
+    </line>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="58456" started-at="2017-03-10T12:33:23Z" finished-at="2017-03-10T12:34:21Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="58456" started-at="2017-03-10T12:33:23Z" finished-at="2017-03-10T12:34:21Z">
+      <class name="testCases.Framework_001">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:testCases.Framework_001@24cca73f]" name="beforeMethod" is-config="true" duration-ms="13981" started-at="2017-03-10T18:03:23Z" finished-at="2017-03-10T18:03:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="main()[pri:0, instance:testCases.Framework_001@24cca73f]" name="main" duration-ms="44448" started-at="2017-03-10T18:03:37Z" finished-at="2017-03-10T18:04:21Z">
+          <reporter-output>
+            <line>
+              <![CDATA[SignIn Action is successfully perfomred]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- main -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:testCases.Framework_001@24cca73f]" name="afterMethod" is-config="true" duration-ms="0" started-at="2017-03-10T18:04:21Z" finished-at="2017-03-10T18:04:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- testCases.Framework_001 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
