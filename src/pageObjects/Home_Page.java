@@ -20,6 +20,7 @@ import utility.Utils;
         public static WebElement Ok() throws Exception{
 	      	try{
 	      		
+	      		Thread.sleep(2000) ;
 	      		System.out.println("enter into OK press");
 	      		
 	      		driver.findElement(By.xpath("//div[@class='alert-button-group']")).click() ;

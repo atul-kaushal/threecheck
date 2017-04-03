@@ -134,24 +134,7 @@ public class Utils {
         }
 
      }
-	 public static boolean isElementVisible (WebElement ele,String LocaterName)
-		{
-//			WebElement Welement=null;
-			boolean Status=false;
-			try
-			{
-//			Welement= driver.findElement(By.xpath(xpathExpression));
-			Status= ele.isDisplayed();
-			}
-			catch(Exception e)
-			{
-				System.out.println("ERROR: Element "+LocaterName+" is not Visible");
-			    e.printStackTrace();
-			    System.out.println(e);
-			}
-		  
-			return Status;
-		}
+	
 	 
 	 public static void takeScreenshot(WebDriver driver, String sTestCaseName) throws Exception{
 			try{
@@ -173,44 +156,10 @@ public class Utils {
 			}
 		}
 	 
-	 public static WebElement FindElement(By ele, String LocaterName)
-		{
-		
-			WebElement Welement=null;
-			
-			try
-			{
-			
-				Welement =driver.findElement(ele);
-		
-			}
-			catch(Exception e)
-			{
-				
-				System.out.println("ERROR: Element "+LocaterName+"Not Found");
-			}
-			return Welement;
-		}
+	
 		
 
-	public static By FindObject(String Locater)
-	{
-	By element=null;
-			
-	        if(Locater.contains("/"))
-			{
-				element=By.xpath(Locater);
-			}
-
-			else
-			{
-
-				element=By.id(Locater);
-			
-			}
-			
-	        return element;
-	}	
+	
 	 
 	public static WebElement fluentWait(final By locator) throws Exception{
 		
@@ -302,6 +251,13 @@ XSSFWorkbook workbook = new XSSFWorkbook();
 	
 	
 	
+	
+	/////
+	 
+
+	  
+	
+	///
 	
 	
 	}

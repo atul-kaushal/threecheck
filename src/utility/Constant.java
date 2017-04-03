@@ -16,16 +16,16 @@ public class Constant {
 		public static final int Col_UserName =1 ;
 		public static final int Col_Password = 2;
 		public static final int Col_Browser = 3;
-		public static final int Col_ProductType = 4;
-		public static final int Col_ProductNumber = 5;
-		public static final int Col_FirstName = 6;
-		public static final int Col_LastName = 7;
-//		public static final int Col_Address = 8;
-		public static final int Col_City = 9;
-		public static final int Col_Country = 10;
-		public static final int Col_Phone = 11;
-		public static final int Col_Email = 12;
-		public static final int Col_Result = 13;
+//		public static final int Col_ProductType = 4;
+//		public static final int Col_ProductNumber = 5;
+//		public static final int Col_FirstName = 6;
+//		public static final int Col_LastName = 7;
+////		public static final int Col_Address = 8;
+//		public static final int Col_City = 9;
+//		public static final int Col_Country = 10;
+//		public static final int Col_Phone = 11;
+//		public static final int Col_Email = 12;
+		public static final int Col_Result = 4;
 		public static final String PathToTestpass_ScreenShot = "C:\\Users\\IST\\workspace\\Threecheck\\src\\Screenshots\\Pass\\";
 		public static final String PathToTestFail_ScreenShot = "C:\\Users\\IST\\workspace\\Threecheck\\src\\Screenshots\\Fail\\";
 	
@@ -40,6 +40,11 @@ public class Constant {
 		public static final String Sheet_TeamList = "Team Data";
 		
 		public static final String Sheet_VehicleList = "Vehicle Data";
+		
+		public static final String Sheet_LoginCreadential = "LoginUsers";
+		
+		
+		public static final String Sheet_InvalidCreadential = "Sheet2";
 		
 		//Job Data Excel sheets
 		public static final int Col_JobID = 0;	
@@ -79,7 +84,7 @@ public class Constant {
 				public static final int Col_IsVehicleCreated =8;	
 				
 	
-				//User data excel sheets
+				//CreateUsers data excel sheets
 				
 						public static final int Col_Userid =0 ;
 						public static final int Col_userfirstname =1;
@@ -89,8 +94,33 @@ public class Constant {
 						public static final int Col_userrole =5;
 						public static final int Col_IsuserCreated =8;	
 		
-	
+						
+			// Userlogin data			
+						
+						public static final int Col_UserID =0;	
+						
+						public static final int Col_Userloginname =1;	
+						public static final int Col_Userpwd =2;	
+						
+						
+						public static final int Col_userType = 3;
+						
+						public static final int Col_Isloggedin =4;	
+						
+	// InvalidUserlogin data			
+						
+						public static final int Col_InUserID =0;	
+						
+						public static final int Col_InUserloginname =1;	
+						public static final int Col_InUserpwd =2;	
+							
+						
+						public static final int Col_InuserType = 3;
+						
+						public static final int Col_InIsloggedin =4;
+						
+						
 						public static final String KEYWORD_FAIL = "FAIL";
-		public static final String KEYWORD_PASS = "PASS";
+	                  	public static final String KEYWORD_PASS = "PASS";
 
 }

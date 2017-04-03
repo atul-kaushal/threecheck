@@ -57,6 +57,8 @@ public class Login_Test{
 		  
 		SignIn_Action.Execute(iTestCaseRow);
 		
+		SignIn_Action.logOut() ;
+		
 		Filter_Action.applyFilterTogetAlljobs() ;
 		
 		Thread.sleep(3000);

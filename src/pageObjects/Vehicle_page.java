@@ -21,35 +21,35 @@ public static WebElement element =null;
 public static WebElement clickToAddButton() throws Exception{
 
 	
-	return element= Utils.FindElement(By.xpath("//page-vehicle-management/button"),"Add button" );
+	return element= BaseClass.FindElement(By.xpath("//page-vehicle-management/button"),"Add button" );
 	
 }
 
 public static WebElement make() throws Exception{
 
 	
-	return element= Utils.FindElement(By.xpath("//input[@name='make']")," Vehicle make" );
+	return element= BaseClass.FindElement(By.xpath("//input[@name='make']")," Vehicle make" );
 	
 }
 
 public static WebElement model() throws Exception{
 
 	
-	return element= Utils.FindElement(By.xpath("//input[@name='model']")," Vehicle make" );
+	return element= BaseClass.FindElement(By.xpath("//input[@name='model']")," Vehicle make" );
 	
 }
 
 public static WebElement VINnumber() throws Exception{
 
 	
-	return element= Utils.FindElement(By.xpath("//input[@name='vehicleIdentificationNumber']")," Vehicle make" );
+	return element= BaseClass.FindElement(By.xpath("//input[@name='vehicleIdentificationNumber']")," Vehicle make" );
 	
 }
 
 public static WebElement VRNnumber() throws Exception{
 
 	
-	return element= Utils.FindElement(By.xpath("//input[@name='vehicleRegistrationNumber']")," Vehicle make" );
+	return element= BaseClass.FindElement(By.xpath("//input[@name='vehicleRegistrationNumber']")," Vehicle make" );
 	
 }
 
@@ -57,11 +57,11 @@ public static WebElement selectFuelType() throws Exception{
 
 	
 	Thread.sleep(2000);
-	Utils.FindElement(By.xpath("//*[@placeholder='Select Fuel Type']//button"), "fuel type").click();
+	BaseClass.FindElement(By.xpath("//*[@placeholder='Select Fuel Type']//button"), "fuel type").click();
 		
 	
 		Thread.sleep(3000);
-		Utils.FindElement(By.xpath("//ion-alert/div")," Pop UP");
+		BaseClass.FindElement(By.xpath("//ion-alert/div")," Pop UP");
 		
 
 	     Thread.sleep(3000);
@@ -81,13 +81,13 @@ List<WebElement> alloptions=driver.findElements(By.xpath("//*[@class='alert-radi
 
 	     Thread.sleep(3000);
 	        
-      	 Utils.FindElement(By.xpath("//*[@placeholder='Select Driver']//button")," Driver Drop down").click();
+	     BaseClass.FindElement(By.xpath("//*[@placeholder='Select Driver']//button")," Driver Drop down").click();
       	 
       	 
 
          Thread.sleep(3000);
             
-      	Utils.FindElement(By.xpath("//ion-alert/div"),"Pop up");
+         BaseClass.FindElement(By.xpath("//ion-alert/div"),"Pop up");
       	 
 
         Thread.sleep(3000);
@@ -113,7 +113,7 @@ List<WebElement> alloptions=driver.findElements(By.xpath("//*[@class='alert-radi
 			
 		     String message ;
 			
-	      	 element=Utils.FindElement(By.xpath("//div[@class='toast-message']"),"Toast message");
+	      	 element=BaseClass.FindElement(By.xpath("//div[@class='toast-message']"),"Toast message");
 	      	 
 	      	 message= 	 element.getText();
 	      	 
@@ -126,7 +126,7 @@ List<WebElement> alloptions=driver.findElements(By.xpath("//*[@class='alert-radi
 			
 		 Utils.scrollPage();
 		
-      	 element=Utils.FindElement(By.xpath("//button[contains(.,'Add Vehicle')]"),"Add button.");
+      	 element=BaseClass.FindElement(By.xpath("//button[contains(.,'Add Vehicle')]"),"Add button.");
       	
       	 
       	 return element ;
@@ -136,7 +136,7 @@ List<WebElement> alloptions=driver.findElements(By.xpath("//*[@class='alert-radi
 			
 		  
 			
-      	 element=Utils.FindElement(By.xpath("//button[contains(.,'OK')]"),"Ok PopUp.");
+      	 element=BaseClass.FindElement(By.xpath("//button[contains(.,'OK')]"),"Ok PopUp.");
       	
       	 
       	 return element ;

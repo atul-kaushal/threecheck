@@ -5,7 +5,9 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Iterator;
 
+import org.apache.poi.hssf.usermodel.HSSFCell;
 import org.apache.poi.hssf.usermodel.HSSFDateUtil;
+import org.apache.poi.hssf.usermodel.HSSFRow;
 import org.apache.poi.ss.format.CellDateFormatter;
 import org.apache.poi.ss.usermodel.Cell;
 
@@ -128,6 +130,7 @@ import pageObjects.BaseClass;
         		try {
         			int rowCount = ExcelUtils.getRowUsed();
         			
+        			System.out.println("Into getRowContains"+sTestCaseName);
 //        			int rowCount =	ExcelWSheet.getLastRowNum();
         			
         			System.out.println("row count="+rowCount);
@@ -171,7 +174,7 @@ import pageObjects.BaseClass;
         	
         	
         	
-        	public   void readSheetContent(XSSFSheet sheet){
+        	public static void readSheetContent(XSSFSheet sheet){
         		
         		Iterator<Row> rowIterator = sheet.iterator(); // sh.rowIterator(); -- also works well
     			
@@ -206,14 +209,89 @@ import pageObjects.BaseClass;
         	
         	
         	
+        	////////////////////////////////////////////
         	
+        	public static  Object[][] retrieveTestData(String wsName)
+        	{
+        		int sheetIndex=ExcelWBook.getSheetIndex(wsName);
+        		
+        		if(sheetIndex==-1)
+        			return null;
+        		else{
+        				int rowNum = getRowCount(wsName);
+        				int colNum = retrieveNoOfCols(wsName);
+        		
+        				Object data[][] = new Object[rowNum-1][colNum-2];
+        		
+        				for (int i=0; i<rowNum-1; i++){
+        				
+        					XSSFRow row = ExcelWSheet.getRow(i+1);
+        					
+        					for(int j=0; j< colNum-2; j++){					
+        						
+        						if(row==null){
+        							
+        							data[i][j] = " ";
+        						}
+        						else{
+        						
+        							XSSFCell cell = row.getCell(j);	
+        					     if(cell==null){
+        								data[i][j] = "";							
+        							}
+        							
+        					     else{
+        								
+        								cell.setCellType(Cell.CELL_TYPE_STRING);
+        								
+        								String value = cellToString(cell);
+        								
+        								data[i][j] = value;						
+        							 }
+        						}
+        					}				
+        				}					
+        				return data;		
+        		}
+        	}
         	
+  ////////////////////////////////////////////////////////////////
         	
-  
-        	
+        	public static String cellToString(XSSFCell cell2){
+        		int type;
+        		
+        		Object result;
+        		type = cell2.getCellType();			
+        		switch (type){
+        			case 0 :
+        				result = cell2.getNumericCellValue();
+        				break;
+        				
+        			case 1 : 
+        				result = cell2.getStringCellValue();
+        				break;
+        				
+        			default :
+        				throw new RuntimeException("Unsupportd cell.");			
+        		}
+        		return result.toString();
+        	}
         	//////////////////////////////////
         	
-        	
+        	public static int retrieveNoOfCols(String wsName){
+        		int sheetIndex=ExcelWBook.getSheetIndex(wsName);
+        		if(sheetIndex==-1){
+        			return 0;
+        		}
+        			
+        		else{
+        			ExcelWSheet = ExcelWBook.getSheetAt(sheetIndex);
+        			int colCount=ExcelWSheet.getRow(0).getLastCellNum();			
+        			return colCount;
+        		}
+        	}
+
+        	////////////////////////////////
         	
         	public static int getRowUsed() throws Exception {
         		try{
