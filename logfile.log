@@ -9668,3 +9668,58 @@ Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browser
 2017-04-03 20:06:56,959 INFO  [Log] Password text box is found on the Login page 
 2017-04-03 20:07:17,302 ERROR [Log] Password text box is not found on the Login Page 
 2017-04-03 20:07:17,758 INFO  [Log] Test case -E---N---D-  
+2017-04-03 20:28:38,060 INFO  [Log] Log info for  Loginregressioncases 
+2017-04-03 20:28:39,185 INFO  [Log] Total number of Row used return as < 15 >. 
+2017-04-03 20:28:44,673 INFO  [Log] New driver instantiated 
+2017-04-03 20:28:44,683 INFO  [Log] Implicit wait applied on the driver for 10 seconds 
+2017-04-03 20:29:55,306 INFO  [Log] Web application launched successfully 
+2017-04-03 20:29:55,392 INFO  [Log] Username text box is found on the Login Page 
+2017-04-03 20:29:55,452 INFO  [Log]  is entered in UserName text box 
+2017-04-03 20:29:55,485 INFO  [Log] Password text box is found on the Login page 
+2017-04-03 20:29:55,630 INFO  [Log] Admin@125 is entered in Password text box 
+2017-04-03 20:29:55,667 INFO  [Log] login button is found on the Login page 
+2017-04-03 20:29:55,780 INFO  [Log] Click action is performed on login button 
+2017-04-03 20:30:20,876 ERROR [Log] Password text box is not found on the Login Page 
+2017-04-03 20:30:40,964 INFO  [Log] Submit button is found on the Login page 
+2017-04-03 20:30:41,014 INFO  [Log] Submit button is found on the Login page 
+2017-04-03 20:30:57,398 INFO  [Log] Username text box is found on the Login Page 
+2017-04-03 20:30:57,582 INFO  [Log] atulkshl@gmail.com is entered in UserName text box 
+2017-04-03 20:30:57,631 INFO  [Log] Password text box is found on the Login page 
+2017-04-03 20:30:57,699 INFO  [Log]  is entered in Password text box 
+2017-04-03 20:30:57,737 INFO  [Log] login button is found on the Login page 
+2017-04-03 20:30:57,832 INFO  [Log] Click action is performed on login button 
+2017-04-03 20:31:22,862 ERROR [Log] Password text box is not found on the Login Page 
+2017-04-03 20:31:42,967 INFO  [Log] Submit button is found on the Login page 
+2017-04-03 20:31:43,023 INFO  [Log] Submit button is found on the Login page 
+2017-04-03 20:31:43,065 INFO  [Log] Submit button is found on the Login page 
+2017-04-03 20:32:07,122 INFO  [Log] Username text box is found on the Login Page 
+2017-04-03 20:32:07,191 INFO  [Log]  is entered in UserName text box 
+2017-04-03 20:32:07,225 INFO  [Log] Password text box is found on the Login page 
+2017-04-03 20:32:07,292 INFO  [Log]  is entered in Password text box 
+2017-04-03 20:32:07,325 INFO  [Log] login button is found on the Login page 
+2017-04-03 20:32:07,419 INFO  [Log] Click action is performed on login button 
+2017-04-03 20:32:32,456 ERROR [Log] Password text box is not found on the Login Page 
+2017-04-03 20:32:52,549 INFO  [Log] Submit button is found on the Login page 
+2017-04-03 20:32:52,591 INFO  [Log] Submit button is found on the Login page 
+2017-04-03 20:33:02,335 INFO  [Log] Username text box is found on the Login Page 
+2017-04-03 20:33:02,569 INFO  [Log] atul.kaushal@innoeye.com is entered in UserName text box 
+2017-04-03 20:33:02,607 INFO  [Log] Password text box is found on the Login page 
+2017-04-03 20:33:02,724 INFO  [Log] Admin@123 is entered in Password text box 
+2017-04-03 20:33:02,763 INFO  [Log] login button is found on the Login page 
+2017-04-03 20:33:02,854 INFO  [Log] Click action is performed on login button 
+2017-04-03 20:33:07,920 INFO  [Log] Clicked on OK conformation 
+2017-04-03 20:33:08,413 INFO  [Log] Clicked on Menu Navigation 
+2017-04-03 20:33:13,592 INFO  [Log] Log Out link is found on the Home Page 
+2017-04-03 20:33:15,868 INFO  [Log] Clicked on OK conformation 
+2017-04-03 20:33:16,139 INFO  [Log] Username text box is found on the Login Page 
+2017-04-03 20:33:16,306 INFO  [Log] Username text box is found on the Login Page 
+2017-04-03 20:33:16,562 INFO  [Log] atulkshl@gmail.com is entered in UserName text box 
+2017-04-03 20:33:16,611 INFO  [Log] Password text box is found on the Login page 
+2017-04-03 20:33:16,751 INFO  [Log] Admin@123 is entered in Password text box 
+2017-04-03 20:33:16,785 INFO  [Log] login button is found on the Login page 
+2017-04-03 20:33:16,883 INFO  [Log] Click action is performed on login button 
+2017-04-03 20:33:21,965 INFO  [Log] Clicked on OK conformation 
+2017-04-03 20:33:22,200 INFO  [Log] Clicked on Menu Navigation 
+2017-04-03 20:33:27,329 INFO  [Log] Log Out link is found on the Home Page 
+2017-04-03 20:33:29,620 INFO  [Log] Clicked on OK conformation 
+2017-04-03 20:33:29,923 INFO  [Log] Username text box is found on the Login Page 
