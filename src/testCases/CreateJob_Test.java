@@ -132,7 +132,17 @@ catch(Exception e){
 	    
 		System.out.println(expmonth+":"+expday+":"+expyear);		
 		
+//		       Thread.sleep(2000) ;
+		       
+		       try{
 				Create_job_Action.Create_Job(expmonth,expday,expyear);
+		       }
+				catch(Exception e){
+					
+					
+					ExcelUtils.setCellData(Constant.KEYWORD_FAIL,jonnumber,Constant.Col_IsJobCreated,Constant.Sheet_Joblist);
+					
+				}
 				
 				if(BaseClass.bResult==false){
 					

@@ -1,12 +1,13 @@
 package appModules;
 
+
 import org.testng.Assert;
 
 import pageObjects.BaseClass;
 
 import pageObjects.Createjob_page;
 import pageObjects.Home_Page;
-import pageObjects.JobSchedule;
+
 import pageObjects.JobSchedule2;
 
 import pageObjects.Vehicle_page;
@@ -19,15 +20,17 @@ public class Create_job_Action {
 	public static void Create_Job(int m ,int d ,int y) throws Exception{
 		
 		try {
-			
+			Thread .sleep(2000);
 			Home_Page.Click_AddJob_Icon().click();
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		
-		
+	
       Createjob_page.Recipient_name().sendKeys(CreateJob_Test.Recipientname);
+      
+      
       Createjob_page.Recipient_number().sendKeys(CreateJob_Test.MobileNo);
       Createjob_page.Destination().sendKeys(CreateJob_Test.Address);
       
@@ -41,17 +44,15 @@ public class Create_job_Action {
       JobSchedule2.jobStarttimeFrame(CreateJob_Test.StartTime) ;
       
       JobSchedule2.jobEndtimeFrame();
+		    
+ 
+      
+//      Createjob_page.SelectDriverToAssign().click();
+      
       
 //      Createjob_page.Ok().click() ;   
       
-      Createjob_page.SelectDriverToAssign().click();
-      
-      
-      Createjob_page.Ok().click() ;   
-      
-//      Createjob_page.card_Header();
-           
-      
+
       Createjob_page.Add_job().click() ;
       
       String Expmessage = "Job created successfully" ;

@@ -1,9 +1,9 @@
 package utility;
 
 public class Constant {
-//	    public static final String URL = "http://103.231.44.92:38047/threecheck/www/index.html";
+	    public static final String URL = "http://103.231.44.92:38047/threecheck/www/index.html";
 	    
-	    public static final String URL = "http://ec2-54-218-89-35.us-west-2.compute.amazonaws.com/threecheck/www/index.html";
+//	    public static final String URL = "http://ec2-54-218-89-35.us-west-2.compute.amazonaws.com/threecheck/www/index.html";
 	    
 	    
 	    public static final String Username = "testuser_1";

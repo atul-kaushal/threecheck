@@ -110,15 +110,16 @@ public class JobSchedule2 extends BaseClass{
 			javascript.executeScript("window.scrollBy(0,600)", "");
 
 
-			Thread.sleep(5000);
+			Thread.sleep(2000);
 			driver.findElement(By.xpath("//ion-card-header[contains(.,'Complete Between')]//button")).click();
-			Thread.sleep(5000);
+			Thread.sleep(2000);
 			utility.Utils.scrollPage();
 
 			driver.findElement(By.xpath("//ion-datetime[@name='selectedJobDate1']//button")).click();
 			//      		 
-			Thread.sleep(5000);
+			Thread.sleep(2000);
 			driver.findElement(By.xpath("//div[@class='picker-toolbar']"));
+	
 			month=	driver.findElement(By.xpath("//div[@class='picker-columns']/div[2]//button[@class='picker-opt picker-opt-selected']")) ;
 
 			today=	driver.findElement(By.xpath("//div[@class='picker-columns']/div[3]//button[@class='picker-opt picker-opt-selected']")) ;
@@ -137,18 +138,12 @@ public class JobSchedule2 extends BaseClass{
 			//	       
 			while(dateNotFound){      
 				if(DisplayMonth==expmonth && (Displayday==expDate) && (Displayear==expYear)){
-					//	    	   
-					//	    	   System.out.println("Current date is "+CurrectMonth+" "+Currectday+" "+Currectyear);
-					//	    	   
+					 	   
 					System.out.println("Case 1 ");
-
-					element= driver.findElement(By.xpath("//button[contains(.,'Done')]"));
-					//	    	   
 					dateNotFound = false;
-					//	    	   
 				}
 				else if((expmonth == DisplayMonth) && (expDate>Displayday) && (expYear== Displayear)){
-					//        	   
+
 					System.out.println("Case 2");
 
 					Displayday=Integer.parseInt(selectDate(expDate,Displayday).getText());
@@ -157,8 +152,8 @@ public class JobSchedule2 extends BaseClass{
 				else if((expmonth > DisplayMonth) && (expDate==Displayday) && (expYear== Displayear) ){
 
 					System.out.println("Case 3");
-					//	    	   selectMonth(expmonth);   
-					//	        	  
+					
+					
 					DisplayMonth=Integer.parseInt(selectMonth(expmonth).getText());  
 
 
@@ -168,8 +163,7 @@ public class JobSchedule2 extends BaseClass{
 				else if((expmonth > DisplayMonth) && (expDate<Displayday) && (expYear== Displayear) ){
 
 					System.out.println("Case 4");
-					//	    	   selectMonth(expmonth);   
-					//	        	  
+					
 					DisplayMonth=Integer.parseInt(selectMonth(expmonth).getText());  
 
 
@@ -179,8 +173,7 @@ public class JobSchedule2 extends BaseClass{
 				else if((expmonth > DisplayMonth) && (expDate>Displayday) && (expYear== Displayear) ){
 
 					System.out.println("Case 5");
-					//              selectMonth(expmonth);   
-					//	  
+						  
 					DisplayMonth=Integer.parseInt(selectMonth(expmonth).getText());  
 
 
@@ -191,6 +184,7 @@ public class JobSchedule2 extends BaseClass{
 
 			}
 
+			Thread.sleep(4000);
 			driver.findElement(By.xpath("//button[contains(.,'Done')]")).click();
 
 		}
@@ -223,8 +217,6 @@ public class JobSchedule2 extends BaseClass{
 		System.out.println("clicked"+ n);
 		return today;
 
-		//Loop will rotate till expected date not found.
-
 	} 
 
 	//  ::::: overloaded method ::::::::::::::::::::::::::::::::::::::
@@ -246,12 +238,10 @@ public class JobSchedule2 extends BaseClass{
 				}
 
 				n-- ;
-				Thread.sleep(1000);
+//				Thread.sleep(1000);
 
 				driver.findElement(By.xpath("//div[@class='picker-columns']/div[3]//button[@class='picker-opt']["+n+"]")).click() ;
 
-				//div[@class='picker-columns']/div[3]//button[@class='picker-opt'][1]
-				Thread.sleep(1000);
 				today=driver.findElement(By.xpath("//div[@class='picker-columns']/div[3]//button[@class='picker-opt picker-opt-selected']")); 
 
 				Displayday = Integer.parseInt(today.getText());
@@ -264,14 +254,12 @@ public class JobSchedule2 extends BaseClass{
 			while(expdate!=Displayday){	  
 
 
-				Thread.sleep(2000);
+//				Thread.sleep(2000);
 
 				System.out.println("New  date :"+n);
 
 				driver.findElement(By.xpath("//div[@class='picker-columns']/div[3]//button[@class='picker-opt']["+n+"]")).click() ;
 
-				//div[@class='picker-columns']/div[3]//button[@class='picker-opt'][1]
-				Thread.sleep(1000);
 				today=driver.findElement(By.xpath("//div[@class='picker-columns']/div[3]//button[@class='picker-opt picker-opt-selected']")); 
 
 				Displayday = Integer.parseInt(today.getText());
@@ -298,7 +286,7 @@ public class JobSchedule2 extends BaseClass{
 
 			driver.findElement(By.xpath("//div[@class='picker-columns']/div[2]//button[@class='picker-opt']["+n+"]")).click() ;
 
-			Thread.sleep(1000);
+//			Thread.sleep(1000);
 			month=driver.findElement(By.xpath("//div[@class='picker-columns']/div[2]//button[@class='picker-opt picker-opt-selected']")); 
 
 			DisplayMonth = Integer.parseInt(month.getText());
@@ -317,7 +305,7 @@ public class JobSchedule2 extends BaseClass{
 
 			n-- ;
 
-		Thread.sleep(1000); 
+//		Thread.sleep(1000); 
 			driver.findElement(By.xpath("//div[@class='picker-columns']/div[4]//button[@class='picker-opt']["+n+"]")).click() ;
 
 			// driver.findElement(By.xpath("//div[@class='picker-columns']/div[3]//button[@class='picker-opt']["+n+"]")).click() ;
@@ -342,7 +330,7 @@ public class JobSchedule2 extends BaseClass{
 	{          
 		
 		System.out.println("Into job start timme frame");
-		Thread.sleep(5000);
+		Thread.sleep(2000);
 		try{
 
 			exphour=Integer.parseInt(StartTime.substring(0, 2));
@@ -362,13 +350,13 @@ public class JobSchedule2 extends BaseClass{
 
 			utility.Utils.scrollPage();
 
-			Thread.sleep(3000);
+			Thread.sleep(1000);
 			driver.findElement(By.xpath("//*[@name='startTimeBefore']//button")).click();
 
-			Thread.sleep(3000);
+			Thread.sleep(1000);
 			driver.findElement(By.xpath("//div[@class='picker-toolbar']"));
 
-			Thread.sleep(3000);
+//			Thread.sleep(3000);
 
 
 			WebElement	 startThrs=	driver.findElement(By.xpath("//div[@class='picker-columns']/div[2]//button[@class='picker-opt picker-opt-selected']")) ;
@@ -674,10 +662,10 @@ public class JobSchedule2 extends BaseClass{
 
 System.out.println("end hrs="+endhrs+"and Display hrs="+Displayhour);
 		try{
-			Thread.sleep(3000);
+			Thread.sleep(1000);
 			driver.findElement(By.xpath("//*[@name='endTimeBefore']//button")).click();
 
-			Thread.sleep(3000);
+			Thread.sleep(1000);
 			driver.findElement(By.xpath("//div[@class='picker-toolbar']"));       
 
 			int set=(int)Displaymin/15 ;
@@ -734,7 +722,7 @@ System.out.println("end hrs="+endhrs+"and Display hrs="+Displayhour);
 	System.out.println("Calculated end time");
 			System.out.println(endhrs+":"+endmin+":"+Displaymeridian);
 
-			Thread.sleep(8000) ;
+			Thread.sleep(3000) ;
 			driver.findElement(By.xpath("//button[contains(.,'Done')]")).click();
 		}
 		catch(Exception e){
@@ -747,7 +735,7 @@ System.out.println("end hrs="+endhrs+"and Display hrs="+Displayhour);
 
 
 	public static int hourCalculation(int c) throws InterruptedException{
-		Thread.sleep(1000);
+//		Thread.sleep(1000);
 		if(c!=0){
 			driver.findElement(By.xpath("//div[@class='picker-columns']/div[2]//button[@class='picker-opt']["+c+"]")).click();
 
@@ -760,7 +748,7 @@ System.out.println("end hrs="+endhrs+"and Display hrs="+Displayhour);
 	}	
 	public static int minuteCalculation(int c) throws InterruptedException{
 
-		Thread.sleep(1000);
+//		Thread.sleep(1000);
 		driver.findElement(By.xpath("//div[@class='picker-columns']/div[3]//button[@class='picker-opt']["+c+"]")).click() ;
 
 		Displaymin=	Integer.parseInt(driver.findElement(By.xpath("//div[@class='picker-columns']/div[3]//button[@class='picker-opt picker-opt-selected']")).getText());
@@ -775,7 +763,7 @@ System.out.println("end hrs="+endhrs+"and Display hrs="+Displayhour);
 	public static int endHourCalculation(int c) throws InterruptedException{
 		//		   endhrs++ ;
 //		System.out.println("into end hour calulation");
-		Thread.sleep(1000);
+//		Thread.sleep(1000);
 
 		int  endDisplayhour=endhrs ;
 		if(c!=0){
@@ -793,7 +781,7 @@ System.out.println("end hrs="+endhrs+"and Display hrs="+Displayhour);
 	public static int endMinuteCalculation(int c) throws InterruptedException{
 
 		//			endmin=endmin+15 ;
-		Thread.sleep(1000);
+//		Thread.sleep(1000);
 		driver.findElement(By.xpath("//div[@class='picker-columns']/div[3]//button[@class='picker-opt']["+c+"]")).click() ;
 
 		Displaymin=	Integer.parseInt(driver.findElement(By.xpath("//div[@class='picker-columns']/div[3]//button[@class='picker-opt picker-opt-selected']")).getText());

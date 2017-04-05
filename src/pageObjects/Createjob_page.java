@@ -20,17 +20,19 @@ public class Createjob_page extends BaseClass {
       		
       		
       		element=driver.findElement(By.xpath("//input[@name='recipientName']"));
+      		
+      		Thread.sleep(2000) ;
 	            Log.info("Password text box is found on the Login page");
       	}catch (Exception e){
       		Log.error("Password text box is not found on the Login Page");
-         		throw(e);
+//         		throw(e);
          		}
 		return element;
 
       }
 	  public static WebElement Recipient_number() throws Exception{
 	      	try{
-	      		
+	      		Thread.sleep(2000) ;
 	      		element=driver.findElement(By.xpath("//input[@name='recipientNumber']"));
 		            Log.info("Password text box is found on the Login page");
 	      	}catch (Exception e){
@@ -70,7 +72,7 @@ public class Createjob_page extends BaseClass {
 	  public static WebElement SelectDriverToAssign() throws Exception{
 	      	try{
 	      		
-	      		Thread.sleep(5000) ;
+	      		Thread.sleep(3000) ;
 	      		driver.findElement(By.xpath("//*[@placeholder='Select Driver']//button")).click();
 	      		
 	      		
@@ -80,12 +82,14 @@ public class Createjob_page extends BaseClass {
 	      	
 	      		
 	      		 List<WebElement> allOptions = driver.findElements(By.xpath("//*[contains(@id,'alert-input')]"));
-		      		
-		      		for (WebElement ele: allOptions) {
-		      			String option = ele.getText();
-//		      			System.out.println("selenium webdriver"+" "+option);
-		      		}
-			         
+//		      		
+//		      		for (WebElement ele: allOptions) {
+//		      			String option = ele.getText();
+////		      			System.out.println("selenium webdriver"+" "+option);
+//		      		}
+	      		 
+	      		Thread.sleep(2000) ; 
+	      		
 		      		element= allOptions.get(0);
 	      	
 		            Log.info("Password text box is found on the Login page");
@@ -111,6 +115,21 @@ public class Createjob_page extends BaseClass {
 
 	      }	
 
+	  public static void backToHomeScreen() throws Exception{
+	      	try{
+	      		
+	      		
+	      		 Thread.sleep(3000);
+	      	  	driver.findElement(By.xpath("//page-add-job-pickup//button[@ng-reflect-ng-class='back-button-md']")).click();
+	      			
+
+		            Log.info("Password text box is found on the Login page");
+	      	}catch (Exception e){
+	      		Log.error("Password text box is not found on the Login Page");
+	         		throw(e);
+	         		}
+			
+	      }	
 	  
 	  public static WebElement Add_job() throws Exception{
 	      	try{
@@ -153,17 +172,26 @@ public class Createjob_page extends BaseClass {
 	  
 	  public static WebElement Autoselect_address() throws Exception{
 	      	try{
+	      		element=null ;
 //	      		element=driver.findElement(By.xpath(" //*[@class='address-grid']/ion-row[2]/ion-col/p"));
 	      		
 	      		Thread.sleep(10000);
-	      		 List<WebElement> allOptions = driver.findElements(By.xpath("//*[@class='address-grid']//ion-row"));
 	      		
-	      		for (WebElement ele: allOptions) {
-	      			String option = ele.getText();
-//	      			System.out.println("selenium webdriver"+" "+option);
+	      		List<WebElement> allOptions = driver.findElements(By.xpath("//*[@class='address-grid']//ion-row"));
+	      		
+//	      		for (WebElement ele: allOptions) {
+//	      			String option = ele.getText();
+////	      			System.out.println("selenium webdriver"+" "+option);
+//	      		}
+//		        
+	      		Thread.sleep(2000);
+	      		while(element==null){
+	      		
+	      			System.out.println("element not found");
+	      			element= allOptions.get(0);
+	      		
 	      		}
-		         
-	      		element= allOptions.get(0);
+	      		
 	      		
 	      		Log.info("Password text box is found on the Login page");
 	      	}catch (Exception e){
@@ -190,11 +218,6 @@ public class Createjob_page extends BaseClass {
 	      }
 	public static WebElement pageTitle() {
 		// TODO Auto-generated method stub
-		
-		
-		
-		
-		
 		
 		
 		

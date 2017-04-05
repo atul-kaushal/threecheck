@@ -9,7 +9,7 @@
   	<test name="Random Test">
 		<classes>
        		<!-- 	-->
-       			<class name="testCases.Login_Test" />
+       		<!-- 	<class name="testCases.Login_Test" />
        			<class name="testCases.CreateJob_Test" />
        			<class name="testCases.CreateUser_Test" />
        			<class name="testCases.CreateTeam_Test" />
@@ -22,6 +22,10 @@
        			<class name="testCases.MessageStatus_Test" />
        			<class name="testCases.Settings_Test" />
        			<class name="testCases.OrgRegistration_Test" />
+       			<class name="testCases.OrgRegistration_Test" /> -->
+       			
+       			<class name="regressiontest.Loginregressioncases" />
+       			
        			
 		</classes>
   	</test> <!-- Test -->
