@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Random Test"
+           tests="5"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="196.936">
+  <properties />
+  
+  
+            <testcase name="InvalidUser" time="54.714" classname="regressiontest.Loginregressioncases" />
+                <testcase name="validUser" time="20.696" classname="regressiontest.Loginregressioncases" />
+                <testcase name="validUser" time="13.668" classname="regressiontest.Loginregressioncases" />
+                <testcase name="InvalidUser" time="54.476" classname="regressiontest.Loginregressioncases" />
+                <testcase name="InvalidUser" time="53.382" classname="regressiontest.Loginregressioncases" />
+      
+</testsuite>
